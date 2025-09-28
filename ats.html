@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATS Keyword Extractor — Find Fresh Jobs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">⚡ Find Fresh Jobs</div>
+    <div class="nav-links">
+      <a href="index.html" class="big-link">Find Fresh Jobs</a>
+      <a href="ats.html" class="active big-link">ATS Keywords</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>ATS Keyword Extractor</h1>
+    <p class="subtitle">Paste a job description or posting URL. Get the most important keywords and generate a hidden block for your resume.</p>
+
+    <section class="card">
+      <textarea id="jobText" rows="8" placeholder="Paste job description text here..."></textarea>
+      <div class="actions">
+        <button id="extractBtn">Extract Keywords</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Keywords</h2>
+      <div id="keywordsList" class="keywords"></div>
+    </section>
+
+    <section class="card">
+      <h2>Invisible Resume Block</h2>
+      <textarea id="hiddenBlock" rows="4" readonly></textarea>
+      <button id="copyHidden">Copy Invisible Block</button>
+    </section>
+  </main>
+
+  <footer>© 2025 Find Fresh Jobs</footer>
+  <script src="ats.js"></script>
+</body>
+</html>
